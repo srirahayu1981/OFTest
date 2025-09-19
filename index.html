@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css.css">
+  <title>Top 10 Germany onlyfans</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-content">
+      <nav class="nav">
+        <div class="logo">🎬 BestOF</div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#categories">Categories</a>
+          <a href="#trending">Trending</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+      <div class="hero">
+        <h1>Top Germany Only Fans 2025</h1>
+        <p>Discover the most popular and influential OnlyFans talent in Germany. Find your favorite talent across
+          all categories.</p>
+      </div>
+      <div class="filters">
+        <button class="filter-btn active" data-category="all">All Categories</button>
+        <button class="filter-btn" data-category="Solo">Solo</button>
+        <button class="filter-btn" data-category="Couple">Couple</button>
+        <button class="filter-btn" data-category="Vlog">Vlog</button>
+        <button class="filter-btn" data-category="lifestyle">Lifestyle</button>
+        <button class="filter-btn" data-category="Cooking">Cooking</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="content-header">
+      <div class="results-count">Showing <span id="results-count">10</span> of 10 results</div>
+      <select class="sort-dropdown" id="sort-dropdown">
+        <option value="subscribers">Sort by: Subscribers</option>
+        <option value="views">Sort by: Views</option>
+        <option value="rating">Sort by: Rating</option>
+        <option value="name">Sort by: Name</option>
+      </select>
+    </div>
+
+    <div class="creators-grid" id="creators-grid">
+      <!-- JS -->
+    </div>
+
+    <div class="pagination">
+      <button class="page-btn">← Previous</button>
+      <button class="page-btn active">1</button>
+      <button class="page-btn">2</button>
+      <button class="page-btn">3</button>
+      <button class="page-btn">Next →</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms of Service</a>
+      </div>
+      <div class="copyright">
+        <p>&copy; All rights reserved. Made with ❤️ for onlyfans creators.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // data
+    const onlyfansrs = [
+      {
+        id: 1,
+        name: "Aria Wolf",
+        category: "Solo",
+        subscribers: 25200000,
+        views: 3100000000,
+        rating: 4.8,
+        reviews: 2100,
+        description: "Welcome to my world 💋, You never know what you're going to get here, but one thing’s for sure—I’m all about keeping things exciting...",
+        tags: ["Cooking", "Lifestyle", "Vlog"],
+        image: "/image/aria.jpg",
+        channelUrl: "https://onlyfans.com/ariawolftv"
+      },
+      {
+        id: 2,
+        name: "Mary Haze❤️‍🔥",
+        category: "Solo",
+        subscribers: 18500000,
+        views: 2800000000,
+        rating: 4.6,
+        reviews: 1800,
+        description: "Did you know the stereotype that redheads are the most passionate lovers?❤️🔥",
+        tags: ["Gaming", "Solo", "Tutorial"],
+        image: "/image/maria.jpg",
+        channelUrl: "https://onlyfans.com/maryhazevip"
+      },
+      {
+        id: 3,
+        name: "Lana",
+        category: "Couple",
+        subscribers: 22800000,
+        views: 4200000000,
+        rating: 4.9,
+        reviews: 3200,
+        description: "Hello, dear ❤️ I'm Lana, Twerk, Pole Dance teacher",
+        tags: ["Challenge", "Family", "Couple"],
+        image: "/image/lana.jpg",
+        channelUrl: "https://onlyfans.com/yoursweetfox"
+      },
+      {
+        id: 4,
+        name: "Dani Day",
+        category: "Couple",
+        subscribers: 17200000,
+        views: 2100000000,
+        rating: 4.7,
+        reviews: 2500,
+        description: "Join my VIP to see my BEST content and chat🥰👇🏼",
+        tags: ["Podcast", "Interview", "Talk Show"],
+        image: "/image/dani.jpg",
+        channelUrl: "https://onlyfans.com/danidaytv"
+      },
+      {
+        id: 5,
+        name: "Rina",
+        category: "Couple",
+        subscribers: 16800000,
+        views: 1900000000,
+        rating: 4.5,
+        reviews: 1900,
+        description: "Hey I'm Rina! I joined as a bit of an experiment and I’m looking get closer to you! I want to make you smile 🥰",
+        tags: ["Family", "Music", "Dance"],
+        image: "/image/rina.jpg",
+        channelUrl: "https://onlyfans.com/missrinaroxx"
+      },
+      {
+        id: 6,
+        name: "Sheena",
+        category: "Cooking",
+        subscribers: 15300000,
+        views: 1700000000,
+        rating: 4.8,
+        reviews: 1700,
+        description: "brunettes do it better 💕",
+        tags: ["Cooking", "Sketch", "Humor"],
+        image: "/image/shena.jpg",
+        channelUrl: "https://onlyfans.com/sheenaanaya"
+      },
+      {
+        id: 7,
+        name: "Dea",
+        category: "Vlog",
+        subscribers: 14100000,
+        views: 1500000000,
+        rating: 4.9,
+        reviews: 2800,
+        description: "I hope your are ready for some fun",
+        tags: ["Vlog", "Traveling", "Humor"],
+        image: "/image/bc.jpg",
+        channelUrl: "https://onlyfans.com/dakodarose.tv"
+      },
+      {
+        id: 8,
+        name: "Danii",
+        category: "Solo",
+        subscribers: 13500000,
+        views: 1800000000,
+        rating: 4.6,
+        reviews: 2200,
+        description: "𝙬𝙝𝙞𝙩𝙚 𝙜𝙞𝙧𝙡 𝙬𝙞𝙩𝙝 𝙖 𝙥𝙝𝙖𝙩 𝙖𝙨𝙨 🍑 ❄️ 🐰",
+        tags: ["Solo", "Horror", "Reaction"],
+        image: "/image/danis.jpg",
+        channelUrl: "https://onlyfans.com/daniibankstv"
+      },
+      {
+        id: 9,
+        name: "Mika :) 💙",
+        category: "lifestyle",
+        subscribers: 12800000,
+        views: 1400000000,
+        rating: 4.7,
+        reviews: 1600,
+        description: "I’m Mika, 23. Half Asian 💙I’m a college girl both classmates and professors dream about, lolI’m a cheerful, positive, and open-minded girl.",
+        tags: ["Lifestyle", "Business", "Inspiration"],
+        image: "/image/mika.jpg",
+        channelUrl: "https://onlyfans.com/mika.ami"
+      },
+      {
+        id: 10,
+        name: "Addy Fox",
+        category: "Solo",
+        subscribers: 11900000,
+        views: 1600000000,
+        rating: 4.4,
+        reviews: 1300,
+        description: "🔞NAUGHTY CONTENT @adrianafoxxo 🔞✨ Welcome to my world! ✨I’m your bendy bestie who’s always on the move ",
+        tags: ["Mobile Solo", "MLBB", "Strategy"],
+        image: "/image/fox.jpg",
+        channelUrl: "https://onlyfans.com/adrianafoxxox"
+      },
+    ];
+
+    let currentFilter = 'all';
+    let currentSort = 'subscribers';
+    let filteredonlyfansrs = [...onlyfansrs];
+
+    // Helper functions
+    function formatNumber(num) {
+      if (num >= 1000000000) {
+        return (num / 1000000000).toFixed(1) + 'B';
+      } else if (num >= 1000000) {
+        return (num / 1000000).toFixed(1) + 'M';
+      } else if (num >= 1000) {
+        return (num / 1000).toFixed(1) + 'K';
+      }
+      return num.toString();
+    }
+
+    function generateStars(rating) {
+      const fullStars = Math.floor(rating);
+      const hasHalfStar = rating % 1 !== 0;
+      let stars = '★'.repeat(fullStars);
+      if (hasHalfStar) {
+        stars += '☆';
+      } else {
+        stars += '☆'.repeat(5 - fullStars);
+      }
+      return stars.substring(0, 5);
+    }
+
+    function getInitials(name) {
+      return name.split(' ')
+        .map(word => word[0])
+        .join('')
+        .toUpperCase()
+        .substring(0, 2);
+    }
+
+    function getCategoryColor(category) {
+      const colors = {
+        'Solo': 'rgba(255, 107, 107, 0.2)',
+        'Couple': 'rgba(78, 205, 196, 0.2)',
+        'Vlog': 'rgba(69, 183, 209, 0.2)',
+        'lifestyle': 'rgba(150, 206, 180, 0.2)',
+        'Cooking': 'rgba(255, 193, 7, 0.2)'
+      };
+      return colors[category] || 'rgba(78, 205, 196, 0.2)';
+    }
+
+    function getCategoryTextColor(category) {
+      const colors = {
+        'Solo': '#ff6b6b',
+        'Couple': '#4ecdc4',
+        'Vlog': '#45b7d1',
+        'lifestyle': '#96ceb4',
+        'Cooking': '#ffc107'
+      };
+      return colors[category] || '#4ecdc4';
+    }
+
+    function renderonlyfansr(onlyfansr, index) {
+      const categoryColor = getCategoryColor(onlyfansr.category);
+      const categoryTextColor = getCategoryTextColor(onlyfansr.category);
+
+      return `
+                <div class="creator-card" data-category="${onlyfansr.category}">
+                    <div class="rank-badge">#${index + 1}</div>
+                    <div class="creator-image">
+                        <img src="${onlyfansr.image}" alt="${onlyfansr.name}" loading="lazy">
+                    </div>
+                    <div class="creator-info">
+                        <h3 class="creator-name">${onlyfansr.name}</h3>
+                        <span class="creator-category" style="background: ${categoryColor}; color: ${categoryTextColor}; border-color: ${categoryTextColor}30;">
+                            ${onlyfansr.category.charAt(0).toUpperCase() + onlyfansr.category.slice(1)}
+                        </span>
+                        <div class="rating">
+                            <span class="stars">${generateStars(onlyfansr.rating)}</span>
+                            <span class="rating-text">${onlyfansr.rating} (${formatNumber(onlyfansr.reviews)} reviews)</span>
+                        </div>
+                        <div class="creator-stats">
+                            <div class="stat-box">
+                                <div class="stat-number">${formatNumber(onlyfansr.subscribers)}</div>
+                                <div class="stat-label">Subscribers</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-number">${formatNumber(onlyfansr.views)}</div>
+                                <div class="stat-label">Total Views</div>
+                            </div>
+                        </div>
+                        <p class="creator-description">${onlyfansr.description}</p>
+                        <div class="creator-tags">
+                            ${onlyfansr.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                        </div>
+                        <div class="creator-actions">
+                            <button class="btn-primary" onclick="viewChannel('${onlyfansr.channelUrl}')">Visit Channel</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+    }
+
+    function renderonlyfansrs() {
+      const grid = document.getElementById('creators-grid');
+      const resultCount = document.getElementById('results-count');
+
+      if (filteredonlyfansrs.length === 0) {
+        grid.innerHTML = '<div class="loading">No onlyfansrs found for this category.</div>';
+        resultCount.textContent = '0';
+        return;
+      }
+
+      grid.innerHTML = filteredonlyfansrs.map((onlyfansr, index) => renderonlyfansr(onlyfansr, index)).join('');
+      resultCount.textContent = filteredonlyfansrs.length;
+
+      const cards = document.querySelectorAll('.creator-card');
+      cards.forEach((card, index) => {
+        card.style.animation = `fadeInUp 0.6s ease ${index * 0.1}s both`;
+      });
+    }
+
+    function filteronlyfansrs(category) {
+      currentFilter = category;
+      if (category === 'all') {
+        filteredonlyfansrs = [...onlyfansrs];
+      } else {
+        filteredonlyfansrs = onlyfansrs.filter(yt => yt.category === category);
+      }
+      sortonlyfansrs(currentSort);
+    }
+
+    function sortonlyfansrs(sortBy) {
+      currentSort = sortBy;
+      filteredonlyfansrs.sort((a, b) => {
+        switch (sortBy) {
+          case 'subscribers':
+            return b.subscribers - a.subscribers;
+          case 'views':
+            return b.views - a.views;
+          case 'rating':
+            return b.rating - a.rating;
+          case 'name':
+            return a.name.localeCompare(b.name);
+          default:
+            return b.subscribers - a.subscribers;
+        }
+      });
+      renderonlyfansrs();
+    }
+
+    function setupEventListeners() {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          filteronlyfansrs(btn.dataset.category);
+        });
+      });
+
+
+      const sortDropdown = document.getElementById('sort-dropdown');
+      sortDropdown.addEventListener('change', (e) => {
+        sortonlyfansrs(e.target.value);
+      });
+    }
+
+    function viewChannel(url) {
+      window.open(url, '_blank');
+    }
+
+    function toggleFollow(onlyfansrId) {
+      const btn = event.target;
+      if (btn.textContent.includes('♡')) {
+        btn.textContent = '❤️ Following';
+        btn.style.background = '#4ecdc4';
+        btn.style.color = 'white';
+        btn.style.borderColor = '#4ecdc4';
+      } else {
+        btn.textContent = '♡ Follow';
+        btn.style.background = 'transparent';
+        btn.style.color = '#4ecdc4';
+        btn.style.borderColor = '#4ecdc4';
+      }
+    }
+    const style = document.createElement('style');
+    style.textContent = `
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(50px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        `;
+    document.head.appendChild(style);
+
+    function init() {
+      setupEventListeners();
+      sortonlyfansrs('subscribers');
+    }
+
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+
+</html>
